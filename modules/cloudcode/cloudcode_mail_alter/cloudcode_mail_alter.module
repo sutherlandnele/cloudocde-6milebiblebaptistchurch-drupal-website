@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Implements hook_mail_alter().
+ *
+ * This hook allows us to change the "From" email address for SendGrid emails.
+ */
+function cloudcode_mail_alter_mail_alter(&$message) {
+   // Output the entire message array to inspect all available data.
+    
+   // echo '<pre>';
+   // echo json_encode($message, JSON_PRETTY_PRINT);
+   // echo '</pre>';
+   // exit; // Stop execution to inspect the full message array.
+	
+	
+  // Check if this the contact module
+  if ($message['module'] == 'contact') {
+    // Override the "From" email address.
+    $message['from'] = '6milebiblebaptistchurch@gmail.com';  // Replace with your desired "From" email.
+
+    // Optionally, override the sender's name as well.
+    $message['headers']['From'] = 'Six Mile BBC <6milebiblebaptistchurch@gmail.com>';
+  }
+}

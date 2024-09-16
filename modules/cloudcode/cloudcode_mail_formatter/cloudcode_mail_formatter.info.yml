@@ -1,0 +1,7 @@
+name: 'Cloudcode Mail Formatter'
+type: module
+description: 'Cloudcode formatter for formatting emails.'
+package: Cloudcode
+core_version_requirement: ^10
+dependencies:
+  - mailsystem

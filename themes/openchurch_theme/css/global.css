@@ -1,0 +1,144 @@
+
+ * Global styles.
+ */
+
+/**
+ * Bootstrap overrides.
+ */
+body a:hover,
+body a:focus {
+  color: var(--bs-secondary);
+}
+
+body .breadcrumb-item+.breadcrumb-item::before {
+  color: var(--bs-white);
+}
+
+.badge {
+  text-decoration: none;
+}
+
+/**
+ * Spruce up the blockquote element inside of nodes.
+ */
+.node__content blockquote {
+  border-left: 5px solid #ccc;
+  font-style: italic;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+/**
+ * Override iframe embeds.
+ */
+iframe {
+  width: 100%;
+}
+
+/**
+ * Shrink footer on mobile.
+ */
+footer img {
+  max-height: 40px;
+}
+
+footer p {
+  color: var(--bs-secondary);
+}
+
+footer .list-unstyled li {
+  border-bottom: 1px solid var(--bs-secondary);
+  padding: 5px;
+}
+
+footer i {
+  font-size: 2.3rem;
+}
+
+footer h5 {
+  text-transform: uppercase;
+}
+
+.container-fluid {
+  max-width: 1320px;
+}
+
+
+/* suthzy */
+
+/* Ensure button alignment and spacing */
+.navbar .btn-primary {
+  margin-left: auto;
+  order: 1; /* Make sure the button appears after the menu */
+  margin-top: 0.5rem !important; /* Adjust this value as needed for the desired space */
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .navbar .btn-primary {
+    margin-top: 0; /* Reset top margin on larger screens */
+  }
+}
+
+.custom-heading-1 {
+  background: #ededed;
+    padding: 2rem;
+    border-radius: 0px 40px;
+}
+
+.block-views-blockour-churches-slideshow-block-1 h2, #block-openchurch-theme-videogallerysamuelsyoungpeoplesministry h2, #block-openchurch-theme-videogallerymightymensministry h2, #block-openchurch-theme-videogallery2024fathersday h2{
+    text-align: center;
+    /*margin-bottom:-10px !important;*/
+}
+
+.block-views-blockour-churches-slideshow-block-1 h2:after, #block-cardsunderhero h2:after, .featured-message h2:after, #block-openchurch-theme-videogallerysamuelsyoungpeoplesministry h2:after, #block-openchurch-theme-videogallerymightymensministry h2:after , #block-openchurch-theme-videogallery2024fathersday h2:after, #block-openchurch-theme-imagegallery2024fathersday h2:after {
+    content: "";
+    display: block;
+    width: 175px;
+    height: 5px;
+    background: #d14d42; /* You can change this color to whatever you like */
+    margin: 10px auto 0;
+    border-radius: 1px; /* Optional: makes the line edges rounded */
+}
+
+#block-openchurch-theme-messagefrompastorpaullahari {
+    background-color: transparent !important;
+}
+
+@media (min-width: 1400px) {
+    .container-fluid {
+        max-width: 1420px; /* Or any desired width */
+    }
+}
+
+@media (min-width: 1400px) {
+    .ss-max-width {
+        max-width: 1320px !important; /* Or any desired width */
+    }
+}
+
+/* Override the height for small screens */
+@media (max-width: 576px) {
+    .cta {
+        height: 500px; /* Your desired height for small screens */
+    }
+}
+
+/* Override btn for Ministry Cards display */
+#block-cardsunderhero .row .card .card-footer .btn {
+  display:none !important;	
+}
+
+.hero img{
+	max-height: 240px !important;
+}
+
+.cta img{
+	width:100% !important;
+}
+
+#block-openchurch-theme-primary-local-tasks .tabs{
+	display:none;
+}
+
+

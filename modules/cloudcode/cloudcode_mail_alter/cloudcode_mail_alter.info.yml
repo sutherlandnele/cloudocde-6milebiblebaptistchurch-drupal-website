@@ -1,0 +1,8 @@
+name: 'Cloudcode Mail Alter'
+type: module
+description: 'Custom module to alter SendGrid email settings.'
+package: Cloudcode
+core_version_requirement: ^10
+dependencies:
+  - sendgrid_integration
+version: '1.0'
