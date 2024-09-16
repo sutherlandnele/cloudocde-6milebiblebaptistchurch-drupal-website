@@ -56,12 +56,13 @@ The `cloudcode_mail_formatter` module customizes the email formatting for contac
 #### Custom Hook: `hook_mail_alter`
 This hook is implemented to alter the `from` email address when sending mail via SendGrid:
 
----php
+```php
 function cloudcode_mail_formatter_mail_alter(&$message) {
   if ($message['id'] == 'contact_page_mail') {
     $message['from'] = 'no-reply@6milebiblebaptistchurch.org';
   }
 }
+```
 
 ## Contribution
 
