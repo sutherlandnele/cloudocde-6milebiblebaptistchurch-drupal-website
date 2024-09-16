@@ -1,6 +1,6 @@
 # Cloudcode Six Mile Bible Baptist Church Website
 
-![Six Mile Bible Baptist Church Homepage](https://www.6milebiblebaptistchurch.org/sites/default/files/2024-09/6mbbc%20website%20screenshot.png)]
+![Six Mile Bible Baptist Church Homepage](https://www.6milebiblebaptistchurch.org/sites/default/files/2024-09/6mbbc%20website%20screenshot.png)
 
 This repository documents the design and development of the **Six Mile Bible Baptist Church** website, built using **Drupal 10** and customized using the **OpenChurch** module and theme. The website is located at [https://www.6milebiblebaptistchurch.org](https://www.6milebiblebaptistchurch.org).
 
