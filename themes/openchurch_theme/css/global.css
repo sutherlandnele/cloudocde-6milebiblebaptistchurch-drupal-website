@@ -122,11 +122,19 @@ footer h5 {
     .cta {
         height: 500px; /* Your desired height for small screens */
     }
+
+	.navbar-brand{
+	   font-size: 1rem !important
+    }
+
+    .navbar-brand img{
+	   width: 46px !important
+    }
 }
 
 /* Override btn for Ministry Cards display */
 #block-cardsunderhero .row .card .card-footer .btn {
-  display:none !important;	
+  display:none !important;
 }
 
 .hero img{
@@ -141,4 +149,7 @@ footer h5 {
 	display:none;
 }
 
+.scrolled .navbar-brand{
+	font-size: 1rem !important
+}
 
