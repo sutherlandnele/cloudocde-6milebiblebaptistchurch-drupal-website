@@ -62,3 +62,13 @@ function cloudcode_mail_formatter_mail_alter(&$message) {
     $message['from'] = 'no-reply@6milebiblebaptistchurch.org';
   }
 }
+
+## Contribution
+
+If you find this repository useful, please consider giving it a star on GitHub. Your support is much appreciated!
+
+## License
+
+This project is open-sourced under the GNU General Public License v3.0. See the [LICENSE.md](LICENSE.md) file for more details.
+
+---
