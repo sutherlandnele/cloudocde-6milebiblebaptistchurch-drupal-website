@@ -1,4 +1,4 @@
-# Cloudcode Six Mile Bible Baptist Church Website
+# Cloudcode Six Mile Bible Baptist Church Drupal Website
 
 ![Six Mile Bible Baptist Church Homepage](https://www.6milebiblebaptistchurch.org/sites/default/files/2024-09/6mbbc%20website%20screenshot.png)
 
@@ -56,13 +56,13 @@ The `cloudcode_mail_formatter` module customizes the email formatting for contac
 #### Custom Hook: `hook_mail_alter`
 This hook is implemented to alter the `from` email address when sending mail via SendGrid:
 
-```php
+'php
 function cloudcode_mail_formatter_mail_alter(&$message) {
   if ($message['id'] == 'contact_page_mail') {
     $message['from'] = 'no-reply@6milebiblebaptistchurch.org';
   }
 }
----
+
 ## Contribution
 
 If you find this repository useful, please consider giving it a star on GitHub. Your support is much appreciated!
@@ -70,3 +70,5 @@ If you find this repository useful, please consider giving it a star on GitHub. 
 ## License
 
 This project is open-sourced under the GNU General Public License v3.0. See the [LICENSE.md](LICENSE.md) file for more details.
+
+---
