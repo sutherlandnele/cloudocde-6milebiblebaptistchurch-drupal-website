@@ -1,0 +1,1 @@
+docker build -t sixmilebbc-drupal10-website:latest .

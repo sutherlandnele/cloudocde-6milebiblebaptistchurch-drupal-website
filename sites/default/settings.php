@@ -890,6 +890,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+/*
 $databases['default']['default'] = array (
   'database' => 'sixmilebaptist',
   'username' => 'sixmilebaptist',
@@ -897,6 +898,19 @@ $databases['default']['default'] = array (
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
+  'isolation_level' => 'READ COMMITTED',
+  'driver' => 'mysql',
+  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
+  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+);
+*/
+$databases['default']['default'] = array (
+  'database' => getenv('DRUPAL_DB_NAME') ?: 'sixmilebaptist',  // Fallback value if env var is not set
+  'username' => getenv('DRUPAL_DB_USER') ?: 'sixmilebaptist',
+  'password' => getenv('DRUPAL_DB_PASSWORD') ?: 'pbu202401',
+  'host' => getenv('DRUPAL_DB_HOST') ?: 'localhost',
+  'port' => getenv('DRUPAL_DB_PORT') ?: '3306',
+  'prefix' => '',
   'isolation_level' => 'READ COMMITTED',
   'driver' => 'mysql',
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
